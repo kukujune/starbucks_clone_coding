@@ -9,7 +9,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       //    after the API code downloads.
 function onYouTubeIframeAPIReady() {
   new YT.Player('player', {
-    videoId: 'An6LvWQuj_8', // ÃÖÃÊ Àç»ýÇÒ À¯Æ©ºê ¿µ»ó id
+    videoId: 'An6LvWQuj_8', // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿? ï¿½ï¿½Æ©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ id
     playerVars: {
       autoplay: true,
       loop: true,

@@ -1,11 +1,11 @@
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
 
-// _.throttle(?•¨?ˆ˜, ?‹œê°?)
+// _.throttle(?ï¿½ï¿½?ï¿½ï¿½, ?ï¿½ï¿½ï¿??)
 window.addEventListener('scroll', _.throttle(function () {
   console.log(window.scrollY);
-  if(window.scrollY > 500){ // ë°°ì¹˜ ?ˆ¨ê¸°ê¸°
-    // gsap.to(?š”?†Œ, ì§??†?‹œê°?, ?˜µ?…˜);
+  if(window.scrollY > 500){ // ë°°ì¹˜ ?ï¿½ï¿½ê¸°ê¸°
+    // gsap.to(?ï¿½ï¿½?ï¿½ï¿½, ï¿???ï¿½ï¿½?ï¿½ï¿½ï¿??, ?ï¿½ï¿½?ï¿½ï¿½);
     gsap.to(badgeEl, .6, {
       opacity: 0,
       display: 'none'
@@ -15,7 +15,7 @@ window.addEventListener('scroll', _.throttle(function () {
       x: 0
     });
     
-  } else { // ë°°ì¹˜ ë³´ì´ê¸?
+  } else { // ë°°ì¹˜ ë³´ì´ï¿??
     gsap.to(badgeEl, .6, {
       opacity: 1,
       display: 'block'
@@ -42,7 +42,7 @@ fadeEls.forEach(function (fadeEl, index) {
   });
 });
 
-// new Swiper(?„ ?ƒ?, ?˜µ?…˜)
+// new Swiper(?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½, ?ï¿½ï¿½?ï¿½ï¿½)
 new Swiper('.notice-line .swiper-container', {
   direction: 'vertical',
   autoplay: true,
@@ -83,7 +83,7 @@ const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHidePromotion = false;
 promotionToggleBtn.addEventListener('click', function () {
   isHidePromotion = !isHidePromotion;
-  if (isHidePromotion){ // ?ˆ¨ê¹? ì²˜ë¦¬
+  if (isHidePromotion){ // ?ï¿½ï¿½ï¿?? ì²˜ë¦¬
     promotionEl.classList.add('hide');
   } else { // ë³´ì„ ì²˜ë¦¬
     promotionEl.classList.remove('hide');
@@ -95,7 +95,7 @@ function random(min, max) {
 }
 
 function floatingObject(selector, delay, size) { 
-  //gsap.to(?š”?†Œ, ?‹œê°?, ?˜µ?…˜);
+  //gsap.to(?ï¿½ï¿½?ï¿½ï¿½, ?ï¿½ï¿½ï¿??, ?ï¿½ï¿½?ï¿½ï¿½);
   gsap.to(
     selector,
     random(1.5, 2.5), 
